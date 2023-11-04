@@ -1,1 +1,1 @@
-# Exercise-progress-journal
+# FitLog
