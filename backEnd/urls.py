@@ -16,7 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from metrics.views import ActivityLogView, GoalView
+#, CalendarView, ActivityLogView, FAQView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('activitylog/', ActivityLogView.as_view(), name='activityLog'),
+    path('goal/', GoalView.as_view(), name='goal'),
+    # path('', HomeView.as_view(), name='home'),
+    # path('calendar/', CalendarView.as_view(), name='calendar'),
+    # path('faq/', FAQView.as_view(), name='faq')
+    
 ]
