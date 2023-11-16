@@ -20,39 +20,60 @@ const Navbar = () => {
       </div>
 
       <ul className="navList">
-        <li className={`navOption ${selectedOption === 'dashboard' ? 'active' : ''}`}>
-        {/* <li className="navOption active"> */}
-          <a href="/" onClick={() => handleOptionClick('dashboard')}>
+        <li
+          className={`navOption ${
+            selectedOption === "dashboard" ? "active" : ""
+          }`}
+        >
+          {/* <li className="navOption active"> */}
+          <a href="/" onClick={() => handleOptionClick("dashboard")}>
             <FontAwesomeIcon icon={faChartSimple} className="icon" />
             Dashboard
           </a>
         </li>
-        <li className={`navOption ${selectedOption === 'calendar' ? 'active' : ''}`}>
+        <li
+          className={`navOption ${
+            selectedOption === "calendar" ? "active" : ""
+          }`}
+        >
           <FontAwesomeIcon icon={faCalendar} className="icon" />
-          <a href="/calendar" onClick={() => handleOptionClick('calendar')}>Calendar</a>
+          <a href="/calendar" onClick={() => handleOptionClick("calendar")}>
+            Calendar
+          </a>
         </li>
-        <li className={`navOption ${selectedOption === 'activitylog' ? 'active' : ''}`}>
+        <li
+          className={`navOption ${
+            selectedOption === "activitylog" ? "active" : ""
+          }`}
+        >
           <FontAwesomeIcon icon={faClipboard} className="icon" />
-          <a href="/activitylog" onClick={() => handleOptionClick('activitylog')}>Activity Log</a>
+          <a
+            href="/activitylog"
+            onClick={() => handleOptionClick("activitylog")}
+          >
+            Activity Log
+          </a>
         </li>
-        <li className={`navOption ${selectedOption === 'faq' ? 'active' : ''}`}>
+        <li className={`navOption ${selectedOption === "faq" ? "active" : ""}`}>
           <FontAwesomeIcon icon={faComments} className="icon" />
-          <a href="/faq" onClick={() => handleOptionClick('faq')}>FAQ</a>
+          <a href="/faq" onClick={() => handleOptionClick("faq")}>
+            FAQ
+          </a>
         </li>
       </ul>
       <div className="footer">
-        <hr/>
+        <hr />
         <p className="ownerName">Made with 💕 by Michelle</p>
         <div className="socialIcons">
           <a
-            href="https://github.com/your-github"
+            href="https://www.linkedin.com/in/michellemuliana/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} className="icon" />
           </a>
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/michellemuliana/"
             target="_blank"
             rel="noopener noreferrer"
           >
